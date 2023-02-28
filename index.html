@@ -1,49 +1,97 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/css/style.css" />
 
     <title>Food JP</title>
+  </head>
 
-    <link rel="stylesheet" href="style.css">
-    
-
-</head>
-
-<body>
+  <body>
     <header class="cabecalho">
-        <section class="cabecalho__1">
-            <h1 class="logotipo__1">FoodJP</h1>
-        </section>
+      <section class="cabecalho__1">
+        <h1 class="logotipo__1">FoodJP</h1>
+      </section>
 
-        <section class="cabecalho__3">
-            <p class="menu">Inicio</p>
-            <p class="menu">Cardápio</p>
-            <p class="menu">Sobre</p>
-        </section>
+      <section class="cabecalho__3">
+        <p class="menu">Inicio</p>
+        <p class="menu">Cardápio</p>
+        <p class="menu">Sobre</p>
+      </section>
 
-        <section class="cabecalho__4">
-            <h2 class="logging">Entrar</h2>
-        </section>
+      <section class="cabecalho__4">
+        <h2 class="logging">Entrar</h2>
+      </section>
     </header>
-    
+
     <main>
-        <section class="apresentacao">
-
-            <section class="apresentacao__1">
-                <h1 class="titulo_apresentacao-1">Comida Oriental</h1>
-                <p class="texto__apresentacao">A culinária Japonesa é bastante equilibrada, sendo muito rica em peixes (ômega 3), vegetais, massas e ingredientes frescos.</p>
-                <p class="botao_cardapio">Cardápio</p>
-            </section>
-
-            <section class="apresentacao__2">
-                <img class="sushi" src="img/sushi.svg" alt="sushi">
-            </section>
-
+      <section class="apresentacao">
+         <section class="apresentacao__1"> <!--Aqui vc pode criar div -->
+          <h2>Comida Oriental</h2>
+          <p class="texto__apresentacao">
+            A culinária Japonesa é bastante equilibrada, sendo muito rica em
+            peixes (ômega 3), vegetais, massas e ingredientes frescos.
+          </p>
+          <p class="botao_cardapio">Cardápio</p>
         </section>
-    </main>
 
-</body>
+        <section class="apresentacao__2"><!--Aqui vc pode criar div -->
+          <img class="sushi" src="src/img/sushi.svg" alt="sushi" />
+        </section>
+      </section>
+
+      <section class="tradicao">
+        <div class="img">
+            <img src="src/img/imagem-prato.svg" alt="imagem de um prato japones feito com frango">
+        </div>
+
+        <div class="descricao-prato">
+            <h2>Feita de forma Tradicional</h2>
+            <p class="texto__apresentacao">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+
+            <a href="#">Ler mais sobre o modo de preparo</a>
+
+        </div>
+      </section>
+
+      
+
+      <section class="populares">
+        <h2>Mais populares</h2>
+        <div class="wrapper">
+        
+          <div class="prato">
+              <img src="src/img/Ramen de Frango.svg" alt="bol de comida">
+              <div class="descricao-prato">
+                <h3>Ramen de Frango</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <span>R$30,00 </span>
+              </div>
+              
+          </div>
+          <div class="prato">
+              <img src="src/img/Ramen Apimentado.svg" alt="bol de comida">
+              <div class="descricao-prato">
+                <h3>Ramen Apimentado</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <span>R$30,00 </span>
+              </div>
+              
+          </div>
+
+          <div class="prato">
+              <img src="src/img/Ramen Tradicional.svg" alt="bol de comida">
+              <div class="descricao-prato">
+                <h3>Ramen Tradicional</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <span>R$30,00 </span>
+              </div>
+              
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

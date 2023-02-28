@@ -1,0 +1,242 @@
+/* Header */
+
+.cabecalho{
+    display:flex;
+    flex-direction: row; /* Todo display flex, vem como padrão o row, entao vc nao precisa colocar*/
+    justify-content: space-between;
+}
+
+/* LOGO FOOD + JP */
+
+.cabecalho__1{
+    display: flex;
+    flex-direction: row; /* Todo display flex, vem como padrão o row, entao vc nao precisa colocar*/
+    
+}
+
+.logotipo__1{
+    
+    font-family: var(--font-titulo);
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: var(--cor-titulo);
+    width: 100px;
+
+}
+
+/* MENU */
+
+.cabecalho__3{
+    display: flex;
+    flex-direction: row; /* Todo display flex, vem como padrão o row, entao vc nao precisa colocar*/
+    right: 215px;
+    gap: 35px;
+
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    font-family: var(--font-principal); /* Font-family mais usada pode ser colocada no body como "padrao", assim, vc pode mudar somente o que for diferente e dimuniu algumas linhas de codigo*/
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--cor-titulo);
+
+}
+
+/* TELA DE ACESSO A CONTA */
+
+
+.cabecalho__4{
+    display: flex;
+    align-items: center;
+    border: solid 2px;
+    border-radius: 10px;
+
+}
+
+.logging{
+    
+    font-family: var(--font-principal);
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--cor-titulo);
+    width: 180px;
+    text-align: center;
+
+}
+
+/* CONTEÚDO */
+
+h2{
+    font-family: var(--font-titulo);
+    font-weight: 600;
+    font-size: 3rem;
+    color: var(--cor-titulo);
+    Width: 36.1rem;
+
+
+
+}
+
+h3{
+    font-family: var(--font-titulo);
+    color: var(--cor-titulo);
+    font-weight: 500;
+    font-size: 3rem;
+    width: 32rem;
+}
+
+.apresentacao{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding: 50px 0px;
+    gap: 60px;
+
+}
+
+.apresentacao__1{
+    display: grid;
+    align-items: center;
+    height: 400px;
+    margin-top: 100px;
+
+}
+
+
+.texto__apresentacao{
+    font-family: var(--font-principal);
+    font-weight: 400;
+    font-size: 2.4rem;
+    color: var(--cor-titulo);
+    width: 52rem;
+    height: 11.4rem;
+
+}
+
+.botao_cardapio{
+    display: flex;
+    font-family: var(--font-principal);
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--cor-botao);
+    justify-content: space-around;
+    width: 296px;
+    align-items: center;
+    text-align: center;
+    border: solid; 
+    border-color: var(--cor-nome);
+    border-radius: 10px;
+    background-color: var(--cor-nome);
+    height: 60px;
+
+}
+
+
+.apresentacao__2{
+    width: 400px;
+    height: 534.7px;  
+      
+}
+
+/* Inicio do código Karine*/
+
+.tradicao{
+    display: flex;
+    gap: 12.4rem;
+
+}
+
+.img img{
+    width: 60.4rem;
+    height: 50rem;
+}
+
+.descricao-prato{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 2.4rem;
+    
+}
+
+.descricao-prato p{
+    width: 50rem;
+    
+}
+
+
+
+.descricao-prato a{
+    font-weight: 500;
+    font-size: 2.4rem;
+    color: var(--cor-nome);
+    Width: 39.2rem;
+    
+}
+
+.descricao-prato a:hover{
+    border-bottom: 0.1rem solid var(--cor-nome);
+}
+
+.populares{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.wrapper{
+    display: flex;
+    gap: 4.4rem;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+
+.prato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 38rem;
+    height: 45rem;
+    background-color: var(--cor-bc);
+    border-radius: 3.2rem;
+    position: relative;
+    margin-top: 10rem;
+    
+}
+
+.prato img{
+    width: 29.1rem;
+    height: 29.1rem;
+    position: absolute;
+    top: -9rem;
+    
+}
+
+.prato .descricao-prato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25.1rem;
+}
+
+.prato .descricao-prato p{
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: var(--cor-texto);
+    Width: 24.9rem;
+}
+
+.prato .descricao-prato span{
+    font-family: var(--font-titulo);
+    font-weight: 500;
+    font-size: 3.2rem;
+}

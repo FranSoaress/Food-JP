@@ -1,0 +1,34 @@
+/* RESET CSS */
+
+@import url(reset.css);
+
+/* FONTES */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@500;700&family=Poppins:wght@500&family=Roboto&display=swap');
+
+/* STYLE */
+
+@import url(style/main.css);
+
+/* VARIAVEIS DE COR */
+
+:root{
+    --cor-titulo: #292929;
+    --cor-nome: #DA2535;
+    --cor-botao: #FBFBFB;
+    --cor-texto: #616161;
+
+    --font-principal: 'Inter';
+    --font-titulo: 'Montserrat';
+    --font-footer-titulo: 'Poppins';
+    --font-footer-texto: 'Roboto';
+
+}
+
+
+/* BODY */
+
+body{
+    background-color: var(--cor-botao);
+    margin: 2.5% 12% 7.5% 12%;
+}

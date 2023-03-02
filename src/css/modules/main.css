@@ -41,7 +41,14 @@
     font-weight: 500;
     font-size: 1.5rem;
     color: var(--cor-titulo);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
 
+}
+
+.menu:hover{
+    color: var(--cor-nome);
+    border-bottom: 0.1rem solid var(--cor-nome);
 }
 
 /* TELA DE ACESSO A CONTA */
@@ -52,7 +59,15 @@
     align-items: center;
     border: solid 2px;
     border-radius: 10px;
+    transition: 0.3s ease-in-out;
 
+}
+
+.cabecalho__4:hover{
+    background-color: var(--cor-nome);
+    cursor: pointer;
+    
+    
 }
 
 .logging{
@@ -63,7 +78,11 @@
     color: var(--cor-titulo);
     width: 180px;
     text-align: center;
+    transition: 0.2s ease-in-out;
+}
 
+.logging:hover{
+    color: white;
 }
 
 /* CONTEÚDO */
@@ -132,6 +151,13 @@ h3{
     border-radius: 10px;
     background-color: var(--cor-nome);
     height: 60px;
+    transition: 0.3s ease-in-out;
+
+}
+
+.botao_cardapio:hover{
+    scale: 1.1;
+    cursor: pointer;
 
 }
 

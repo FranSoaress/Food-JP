@@ -1,0 +1,38 @@
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10rem;
+}
+
+.footer address{
+    padding: 0 18rem 0 5.1rem;
+}
+
+
+
+.footer ul li{
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-family: var(--font-footer-texto);
+    color: var(--cor-texto);
+    line-height: 3.2rem;
+}
+
+.footer ul li:hover{
+    color: var(--cor-nome);
+    cursor: pointer;
+}
+.titulo-footer h4{
+    font-family: var(--font-footer-titulo);
+    color: var(--cor-titulo);
+    font-weight: 500;
+    font-size:3.2rem;
+    width: 16.1rem;
+    padding-bottom: 2.4rem;
+
+}
+
+.footer nav{
+    display: flex;
+    gap: 15.1rem;
+}

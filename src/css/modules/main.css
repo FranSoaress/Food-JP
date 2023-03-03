@@ -14,8 +14,12 @@
     
 }
 
+.logotipo__1 span{
+    color: var(--cor-nome);
+}
+
 .logotipo__1{
-    
+    display: flex;
     font-family: var(--font-titulo);
     font-weight: 700;
     font-size: 2.5rem;
@@ -37,7 +41,7 @@
 .menu{
     display: flex;
     align-items: center;
-    font-family: var(--font-principal); /* Font-family mais usada pode ser colocada no body como "padrao", assim, vc pode mudar somente o que for diferente e dimuniu algumas linhas de codigo*/
+    font-family: var(--font-principal); /* Font-family mais usada pode ser colocada no body como "padrao", assim, vc pode mudar somente o que for diferente e diminiu algumas linhas de codigo, isso pode ser feito com qualquer coisa que vai ser padrao.*/
     font-weight: 500;
     font-size: 1.5rem;
     color: var(--cor-titulo);

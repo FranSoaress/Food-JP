@@ -221,7 +221,7 @@ h3{
     display: flex;
     gap: 4.4rem;
     align-items: center;
-    margin-top: 5rem;
+    margin: 5rem;
 }
 
 
@@ -265,4 +265,82 @@ h3{
     font-family: var(--font-titulo);
     font-weight: 500;
     font-size: 3.2rem;
+}
+
+/* COMENTÁRIOS */
+
+
+.titulo__comentarios{
+    font-family: var(--font-titulo);
+    font-weight: 600;
+    font-size: 3rem;
+    color: var(--cor-titulo);
+    display: flex;
+    flex-direction: row;
+    margin: 3rem;
+}
+
+.depoimentos{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: 1fr;
+   grid-column-gap: 0px;
+   grid-row-gap: 0px;
+   gap: 2rem;
+}
+
+.imagem__usuarios{
+    margin-top: 3rem;
+    margin-left: 3rem;
+    width: 120px;
+}
+
+.titulo__depoimentos{
+    margin-left: 2rem;
+}
+
+.depoimento{
+    font-family: var(--font-titulo);
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: var(--cor-texto);
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 3rem 5rem 3rem;
+    width: 70%;
+    
+}
+
+.depoimento__Daniele{
+    background-color: var(--cor-bc);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.depoimento__Ricardo{
+    background-color: var(--cor-bc);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.titulo__depoimentos{
+    margin-top: 3rem;
+}
+
+
+/* MAPA */
+
+.titulo__mapa{
+    font-family: var(--font-titulo);
+    font-weight: 600;
+    font-size: 3rem;
+    color: var(--cor-titulo);
+    display: flex;
+    flex-direction: row;
+    margin: 3rem;
+    padding-top: 2rem;
 }

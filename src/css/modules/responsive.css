@@ -1,0 +1,140 @@
+@media screen and (max-width: 768px){
+
+    /* HEADER */
+
+    .cabecalho__1{
+        font-size: 1.12rem;
+        margin-top: 2rem;
+    }
+
+    .cabecalho__3{
+        width: 10%;
+        opacity: 0;
+    }
+
+    .cabecalho__4{
+        width: 10%;
+        opacity: 0;
+    }
+
+    /* BODY */
+
+    body{
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* MENU */
+
+    .apresentacao{
+        display: flex;
+    }
+
+    .apresentacao__1{
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    .texto__apresentacao{
+        width: 38rem;
+    }
+
+
+   .botao__cardapio{
+        width: 38rem;
+
+    }
+
+
+    /* PRATOS */
+
+    .tradicao{
+        display: flex;
+        flex-direction: column;
+        width: 30rem;
+        gap: 1px;
+    }
+
+    .img{
+        width: 40rem;
+        height: 45rem;
+    }
+
+    .descricao-prato{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        width: 40rem;
+    }
+
+    .botao__cardapio:hover{
+        scale: 1.1;
+        cursor: pointer;
+    
+    }
+
+    .populares{
+        margin-top: 3rem;
+
+    }
+
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin: 1rem 1rem 1rem 13rem;
+    }
+
+    /* COMENTÁRIOS */
+
+    .depoimentos{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        text-align: center;
+        margin: 1rem 6rem 1rem 3rem;
+        width: 38rem;
+        justify-content: center;
+    }
+
+    .depoimento{
+        width:38rem;
+    }
+
+
+    .imagem__usuarios{
+        display: flex;
+        margin-left: 15rem;
+    }
+
+
+    /* FOOTER */
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .titulo-footer{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+
+
+    .servicos{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        
+    }
+
+    .footer nav {
+        gap: 2rem;
+    
+    }
+
+}

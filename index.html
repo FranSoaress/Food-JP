@@ -34,12 +34,13 @@
             A culinária Japonesa é bastante equilibrada, sendo muito rica em
             peixes (ômega 3), vegetais, massas e ingredientes frescos.
           </p>
-          <p class="botao_cardapio">Cardápio</p> <!--Aqui pode ser um button-->
+          <p class="botao__cardapio">Cardápio</p> <!--Aqui pode ser um button-->
         </section>
 
         <section class="apresentacao__2"><!--Aqui vc pode criar div -->
           <img class="sushi" src="src/img/sushi.svg" alt="sushi" />
         </section>
+
       </section>
 
       <section class="tradicao">
@@ -58,7 +59,7 @@
 
       
 
-      <sectio class="populares">
+      <section class="populares">
         <h2>Mais populares</h2>
         <div class="wrapper">
         
@@ -91,7 +92,7 @@
               
           </div>
         </div>
-      </sectio>
+      </section>
 
       <section class="usuarios">
 
@@ -104,15 +105,28 @@
             <img class="imagem__usuarios" src="./src/img/Daniele Almeida.svg" alt="Daniele Almeida">
             <h2 class="titulo__depoimentos">Daniele Almeida</h2>
             <p class="depoimento">Ótimo serviço! Encantada com a qualidade dos pratos.</p>
-            
+            <div class="estrelas__Daniele">
+              <img src="./src/img/estrela.svg" alt="estrela1">
+              <img src="./src/img/estrela.svg" alt="estrela2">
+              <img src="./src/img/estrela.svg" alt="estrela3">
+              <img src="./src/img/estrela.svg" alt="estrela4">
+              <img src="./src/img/estrela.svg" alt="estrela5">
+            </div>
           </div>
         
-
+         
         
           <div class="depoimento__Ricardo">
             <img class="imagem__usuarios" src="./src/img/Ricardo França.svg" alt="Ricardo França">
             <h2 class="titulo__depoimentos">Ricardo França</h2>
             <p class="depoimento">Não é apenas a comida excelente, o serviço torna a experiência especial.</p>
+            <div class="estrelas__Ricardo">
+              <img src="./src/img/estrela.svg" alt="estrela1">
+              <img src="./src/img/estrela.svg" alt="estrela2">
+              <img src="./src/img/estrela.svg" alt="estrela3">
+              <img src="./src/img/estrela.svg" alt="estrela4">
+              <img src="./src/img/estrela.svg" alt="estrela5">
+            </div>
            
           </div>
         </div>  
@@ -128,11 +142,12 @@
           <img src="./src/img/mapa rio.svg" alt="">
         </div>
 
-
-
+        <div class="busca_mapa">
+          <h2 class="buscador">Localização para entrega</h2>
+          <a class="botao__busca" href="#">Buscar</a>
+        </div>
 
       </section>
-
 
     </main>
 
@@ -141,25 +156,25 @@
         <span class="logotipo__1"> Food<span>JP</span></span>
       </div>
 
-      <address>
-        <ul>
-          <li class="titulo-footer"><h4>Contato</h4></li>
+      <address class="dados__contato">
+        <ul class="titulo__footer">
+          <li class="titulo__contato"><h4>Contato</h4></li>
           <li>+55 21 9999-9999</li>
         <li>email@gmail.com</li>
         </ul>
         
       </address>
 
-      <nav>
-        <ul>
-          <li class="titulo-footer"><h4>Sobre nós</h4></li>
+      <nav class="servicos">
+        <ul class="titulo__footer">
+          <li class="titulo__sobrenos"><h4>Sobre nós</h4></li>
           <li>Menu</li>
           <li>Valores</li>
           <li>Pagina principal</li>
         </ul>
 
-        <ul>
-          <li class="titulo-footer"><h4>Serviços</h4></li>
+        <ul class="titulo__footer">
+          <li class="titulo__servicos"><h4>Serviços</h4></li>
           <li>Entrega</li>
           <li>Retirada</li>
         </ul>

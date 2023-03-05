@@ -140,7 +140,7 @@ h3{
 
 }
 
-.botao_cardapio{
+.botao__cardapio{
     display: flex;
     font-family: var(--font-principal);
     font-weight: 600;
@@ -159,7 +159,7 @@ h3{
 
 }
 
-.botao_cardapio:hover{
+.botao__cardapio:hover{
     scale: 1.1;
     cursor: pointer;
 
@@ -310,8 +310,8 @@ h3{
     color: var(--cor-texto);
     display: flex;
     flex-direction: row;
-    padding: 1rem 3rem 5rem 3rem;
-    width: 70%;
+    padding: 1rem 3rem 1.5rem 2rem;
+    width: 80%;
     
 }
 
@@ -335,6 +335,14 @@ h3{
     margin-top: 3rem;
 }
 
+.estrelas__Daniele {
+    margin: 2rem;
+    
+}
+
+.estrelas__Ricardo{
+    margin: 2rem;
+}
 
 /* MAPA */
 
@@ -345,6 +353,54 @@ h3{
     color: var(--cor-titulo);
     display: flex;
     flex-direction: row;
-    margin: 3rem;
+    margin: 4rem;
     padding-top: 2rem;
+    
+}
+
+.imagem__mapa{
+    width: 100%;
+}
+
+.busca_mapa{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.buscador{
+    font-family: var(--font-principal);
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: var(--cor-titulo);
+    margin: 2rem 0rem 2rem 2rem;
+    padding: 2.5rem;
+    border: solid 1px;
+    border-radius: 10px;
+    width: 60%;
+
+}
+
+.buscador:hover{
+    color: var(--cor-nome);
+    border-bottom: 0.1rem solid var(--cor-nome);
+}
+
+.botao__busca{
+    font-family: var(--font-principal);
+    font-size: medium;
+    font-size: 1.5rem;
+    color: var(--cor-bc);
+    margin: 2rem 2rem 2rem 0rem;    padding: 2rem;
+    background-color: var(--cor-nome) ;
+    border: solid 1px;
+    border-radius: 10px;
+    border-color: var(--cor-nome);
+    justify-content: center;
+
+}
+
+.botao__busca:hover{
+    scale: 1.1;
+    cursor: pointer;
 }

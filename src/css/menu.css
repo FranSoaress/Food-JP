@@ -1,0 +1,109 @@
+.container #logo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--cor-titulo);
+}
+
+.container #logo span {
+  color: var(--cor-nome);
+}
+
+#header .container {
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--cor-titulo);
+}
+
+.container #menu {
+  display: flex;
+  list-style: none;
+  gap: 0.9rem;
+}
+
+.container #menu a {
+  display: block;
+  padding: 0.6rem;
+  font-size: 2.4rem;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+}
+
+.container #menu a:hover {
+  color: var(--cor-nome);
+}
+
+.container #menu li .btn-header:hover {
+  background-color: var(--cor-nome);
+  color: var(--cor-botao);
+}
+
+#btn-mobile {
+  display: none;
+}
+
+@media (max-width: 1050px) {
+  .container #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 7rem;
+    right: 0;
+    background: var(--cor-bc);
+    transition: 0.6s ease-in-out;
+    z-index: 1000;
+    height: 0;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  .container #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  .container #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 0.2rem solid rgba(0, 0, 0, 0.05);
+  }
+
+  .container #menu li .btn-header {
+    margin-top: 2rem;
+  }
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+  #hamburger {
+    border-top: 0.2rem solid;
+    width: 2rem;
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: "";
+    display: block;
+    width: 2rem;
+    height: 0.2rem;
+    background: currentColor;
+    margin-top: 0.5rem;
+    transition: 0.3s ease-in-out;
+    position: relative;
+  }
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -0.7rem;
+  }
+}

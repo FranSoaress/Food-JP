@@ -1,0 +1,11 @@
+:root {
+    --cor-titulo: #292929;
+    --cor-nome: #da2535;
+    --cor-botao: #fbfbfb;
+    --cor-texto: #616161;
+    --cor-bc: #f3f3f3;
+  
+    --font-titulo: "Montserrat";
+    --font-footer-titulo: "Poppins";
+    --font-footer-texto: "Roboto";
+  }

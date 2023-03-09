@@ -1,186 +1,182 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="src/css/variables.css" />
     <link rel="stylesheet" href="src/css/style.css" />
-
+    <link rel="stylesheet" href="src/css/menu.css" />
+    <link rel="stylesheet" href="src/css/responsive.css" />
     <title>Food JP</title>
   </head>
-
   <body>
-    <header class="cabecalho">
-      <section class="cabecalho__1">
-        <h1 class="logotipo__1">Food <span>JP</span></h1>
-      </section>
+    <header id="header">
+      <div class="container">
+        <a id="logo" href="#">Food<span>JP</span></a>
+        <nav id="nav">
+          <button
+            aria-label="Abrir Menu"
+            id="btn-mobile"
+            aria-haspopup="true"
+            aria-controls="menu"
+            aria-expanded="false"
+          >
+            <span id="hamburger"></span>
+          </button>
+          <ul id="menu" role="menu">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#cardapio">Cardápio</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            
+          </ul>
 
-       <section class="cabecalho__3"> <!--Aqui pode ser uma nav -->
-        <p class="menu">Inicio</p>
-        <p class="menu">Cardápio</p>
-        <p class="menu">Sobre</p>
-      </section>
+          
+        </nav>
 
-      <section class="cabecalho__4">
-        <h2 class="logging">Entrar</h2><!-- Aqui pode ser um button-->
-      </section>
+        
+      </div>
     </header>
 
     <main>
-      <section class="apresentacao">
-         <section class="apresentacao__1"> <!--Aqui vc pode criar div -->
-          <h2>Comida Oriental</h2>
-          <p class="texto__apresentacao">
-            A culinária Japonesa é bastante equilibrada, sendo muito rica em
-            peixes (ômega 3), vegetais, massas e ingredientes frescos.
-          </p>
-          <p class="botao__cardapio">Cardápio</p> <!--Aqui pode ser um button-->
-        </section>
-
-        <section class="apresentacao__2"><!--Aqui vc pode criar div -->
-          <img class="sushi" src="src/img/sushi.svg" alt="sushi" />
-        </section>
-
+      <section class="hero">
+        <div class="container">
+          <div class="inicio" id="inicio">
+            <h2>Comida Oriental</h2>
+            <p>
+              A culinária Japonesa é bastante equilibrada, sendo muito rica em
+              peixes (ômega 3), vegetais, massas e ingredientes frescos.
+            </p>
+            <a href="#">Cardápio</a>
+          </div>
+          <div class="img-inicio">
+            <img src="src/img/sushi.svg" alt="sushi" />
+          </div>
+        </div>
       </section>
 
-      <section class="tradicao">
-        <div class="img">
-            <img src="src/img/imagem-prato.svg" alt="imagem de um prato japones feito com frango">
-        </div>
-
-        <div class="descricao-prato">
+      <section class="sobre" id="sobre">
+        <div class="container">
+          <div class="img-sobre">
+            <img src="src/img/imagem-prato.svg" alt="prato de frango japones" />
+          </div>
+          <div class="preparo">
             <h2>Feita de forma Tradicional</h2>
-            <p class="texto__apresentacao">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
 
-            <a href="#">Ler mais sobre o modo de preparo</a>
-
+            <a href="#">Ler mais sobre o modo de preparo </a>
+          </div>
         </div>
       </section>
-
-      
 
       <section class="populares">
-        <h2>Mais populares</h2>
-        <div class="wrapper">
-        
-          <div class="prato">
-              <img src="src/img/Ramen de Frango.svg" alt="bol de comida">
+        <div class="container">
+          <h2>Mais populares</h2>
+          <div class="wrapper-populares">
+            <div class="prato">
+              <img src="src/img/Ramen de Frango.svg" alt="bol de comida" />
               <div class="descricao-prato">
                 <h3>Ramen de Frango</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <span>R$30,00 </span>
               </div>
-              
-          </div>
-          <div class="prato">
-              <img src="src/img/Ramen Apimentado.svg" alt="bol de comida">
+            </div>
+            <div class="prato">
+              <img src="src/img/Ramen Apimentado.svg" alt="bol de comida" />
               <div class="descricao-prato">
                 <h3>Ramen Apimentado</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <span>R$30,00 </span>
               </div>
-              
-          </div>
+            </div>
 
-          <div class="prato">
-              <img src="src/img/Ramen Tradicional.svg" alt="bol de comida">
+            <div class="prato">
+              <img src="src/img/Ramen Tradicional.svg" alt="bol de comida" />
               <div class="descricao-prato">
                 <h3>Ramen Tradicional</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <span>R$30,00 </span>
               </div>
-              
-          </div>
-        </div>
-      </section>
-
-      <section class="usuarios">
-
-        <div class="titulo__comentarios">
-          <h1>Comentários</h1>
-        </div>
-
-        <div class="depoimentos">
-          <div class="depoimento__Daniele">
-            <img class="imagem__usuarios" src="./src/img/Daniele Almeida.svg" alt="Daniele Almeida">
-            <h2 class="titulo__depoimentos">Daniele Almeida</h2>
-            <p class="depoimento">Ótimo serviço! Encantada com a qualidade dos pratos.</p>
-            <div class="estrelas__Daniele">
-              <img src="./src/img/estrela.svg" alt="estrela1">
-              <img src="./src/img/estrela.svg" alt="estrela2">
-              <img src="./src/img/estrela.svg" alt="estrela3">
-              <img src="./src/img/estrela.svg" alt="estrela4">
-              <img src="./src/img/estrela.svg" alt="estrela5">
             </div>
           </div>
-        
-         
-        
-          <div class="depoimento__Ricardo">
-            <img class="imagem__usuarios" src="./src/img/Ricardo França.svg" alt="Ricardo França">
-            <h2 class="titulo__depoimentos">Ricardo França</h2>
-            <p class="depoimento">Não é apenas a comida excelente, o serviço torna a experiência especial.</p>
-            <div class="estrelas__Ricardo">
-              <img src="./src/img/estrela.svg" alt="estrela1">
-              <img src="./src/img/estrela.svg" alt="estrela2">
-              <img src="./src/img/estrela.svg" alt="estrela3">
-              <img src="./src/img/estrela.svg" alt="estrela4">
-              <img src="./src/img/estrela.svg" alt="estrela5">
+        </div>
+      </section>
+
+      <section class="coments">
+        <div class="container">
+            <h2>Comentários</h2>
+            <div class="wrapper-coments">
+                <div class="card-coments">
+                    <img src="src/img/Daniele Almeida.svg" alt="Foto de perfil">
+                    <h3>Daniele Almeida</h3>
+                    <p>Ótimo serviço! Encantada com a qualidade dos pratos.</p>
+                    <div class="stars">
+                      <img src="./src/img/estrela.svg" alt="estrela1">
+                      <img src="./src/img/estrela.svg" alt="estrela2">
+                      <img src="./src/img/estrela.svg" alt="estrela3">
+                      <img src="./src/img/estrela.svg" alt="estrela4">
+                      <img src="./src/img/estrela.svg" alt="estrela5">
+                    </div>
+                </div>
+
+                <div class="card-coments">
+                    <img src="src/img/Ricardo França.svg" alt="Foto de perfil">
+                    <h3>Ricardo França</h3>
+                    <p>Não é apenas a comida excelente, o serviço torna a experiência especial.</p>
+                    <div class="stars">
+                      <img src="./src/img/estrela.svg" alt="estrela1">
+                      <img src="./src/img/estrela.svg" alt="estrela2">
+                      <img src="./src/img/estrela.svg" alt="estrela3">
+                      <img src="./src/img/estrela.svg" alt="estrela4">
+                      <img src="./src/img/estrela.svg" alt="estrela5">
+                    </div>
+                </div>
             </div>
-           
-          </div>
-        </div>  
 
+        </div>
       </section>
 
-      <section class="mapa">
-        <div class="titulo__mapa">
-          <h1>Localização</h1>
+      <section class="localizacao">
+        <div class="container">
+            <h2>Localização</h2>
+            <img src="src/img/mapa rio.svg" alt="mapa">
+            <form action="text">
+              <input type="text" name="localizacao" placeholder="Localização para entrega">
+              <label for="localizacao" name="localizacao"
+              id="btn-localizacao">Buscar</label>
+            </form>
         </div>
-
-        <div class="imagem__mapa">
-          <img src="./src/img/mapa rio.svg" alt="">
-        </div>
-
-        <div class="busca_mapa">
-          <h2 class="buscador">Localização para entrega</h2>
-          <a class="botao__busca" href="#">Buscar</a>
-        </div>
-
       </section>
-
     </main>
 
-    <footer class="footer">
-      <div>
-        <span class="logotipo__1"> Food<span>JP</span></span>
-      </div>
+    <footer>
+        <div class="container">
+            <a id="logo" href="inicio">Food<span>JP</span></a>
+            <ul>
+                <li class="title-footer">Contatos</li>
+                <li>+55 21 9999-9999</li>
+                <li>email@gmail.com</li>
+            </ul>
 
-      <address class="dados__contato">
-        <ul class="titulo__footer">
-          <li class="titulo__contato"><h4>Contato</h4></li>
-          <li>+55 21 9999-9999</li>
-        <li>email@gmail.com</li>
-        </ul>
-        
-      </address>
+            <ul>
+                <li class="title-footer">Sobre Nós</li>
+                <li><a href="#inicio">Menu</a></li>
+                <li><a href="#cardapio">Valores</a></li>
+                <li><a href="#inicio">Página Principal</a></li>
+            </ul>
 
-      <nav class="servicos">
-        <ul class="titulo__footer">
-          <li class="titulo__sobrenos"><h4>Sobre nós</h4></li>
-          <li>Menu</li>
-          <li>Valores</li>
-          <li>Pagina principal</li>
-        </ul>
-
-        <ul class="titulo__footer">
-          <li class="titulo__servicos"><h4>Serviços</h4></li>
-          <li>Entrega</li>
-          <li>Retirada</li>
-        </ul>
-      </nav>
-
-
+            <ul>
+                <li class="title-footer">Serviços</li>
+                <li>Entrega</li>
+                <li>Retirada</li>
+            </ul>
+        </div>
     </footer>
+
+    <script src="src/js/script.js"></script>
   </body>
 </html>

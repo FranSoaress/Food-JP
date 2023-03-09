@@ -1,39 +1,278 @@
-/* RESET CSS */
-
-@import url(../css/reset.css);
-
-/* FONTES */
-
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@500;700&family=Poppins:wght@500&family=Roboto&display=swap");
 
-/* STYLE */
-
-@import url(../css/modules/main.css);
-@import url(../css/modules/footer.css);
-@import url(../css/modules/responsive.css);
-
-/* VARIAVEIS DE COR */
-
-:root {
-  --cor-titulo: #292929;
-  --cor-nome: #da2535;
-  --cor-botao: #fbfbfb;
-  --cor-texto: #616161;
-  --cor-bc: #f3f3f3;
-
-  --font-principal: "Inter";
-  --font-titulo: "Montserrat";
-  --font-footer-titulo: "Poppins";
-  --font-footer-texto: "Roboto";
+body {
+  min-height: 100vh;
+  background-color: var(--cor-botao);
+  padding: 0 10rem;
 }
 
-/* BODY */
-
-body {
-  background-color: var(--cor-botao);
-  margin: 2.5% 12% 7.5% 12%;
-  min-height: 100vh;
+.container {
+  width: 100%;
+  margin: 0 auto;
   max-width: 1440px;
-  font-family: var(--font-principal);
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: var(--cor-titulo);
+  font-size: clamp(3.2rem, 4vw, 4.8rem);
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: clamp(2.4rem, 4vw, 3.2rem);
+  width: 40rem;
+}
+
+main .hero .container {
+  display: flex;
+  gap: 30.8rem;
+}
+
+main .hero .container .inicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main .hero .container .inicio p {
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  width: 52rem;
+  padding: 2.4rem 0 4.8rem 0;
+}
+
+main .hero .container .inicio a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 29.2rem;
+  height: 6rem;
+  background-color: var(--cor-nome);
+  color: var(--cor-botao);
+  font-size: 2.4rem;
+  font-weight: 600;
+  border-radius: 1rem;
+}
+
+main .hero .container .inicio a:hover {
+  scale: 1.1;
+}
+
+main .hero .container .img-inicio {
+  display: flex;
+  justify-content: center;
+}
+
+main .hero .container .img-inicio img {
+  width: 40rem;
+  height: 53.47rem;
+}
+
+main .sobre .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10rem;
+  margin-bottom: 10rem;
+}
+
+main .sobre .container .img-sobre {
+  display: flex;
+  justify-content: center;
   
+}
+
+main .sobre .container .img-sobre img {
+  width: 60.4rem;
+  height: 50rem;
+}
+
+main .sobre .container .preparo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main .sobre .container .preparo p {
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  width: 50rem;
+  padding: 2.4rem 0 4rem 0;
+}
+
+main .sobre .container .preparo a {
+  border-bottom: 0.1rem solid var(--cor-titulo);
+  font-weight: 500;
+  font-size: clamp(1.6rem, 2vw, 2.4rem);
+  width: 39.2rem;
+}
+
+main .sobre .container .preparo a:hover {
+  border-bottom: 0.1rem solid var(--cor-nome);
+  color: var(--cor-nome);
+}
+
+main .populares .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 10rem;
+}
+
+main .populares .container .wrapper-populares {
+  display: flex;
+  gap: 4.4rem;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+main .populares .container .wrapper-populares .prato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 38rem;
+  height: 45rem;
+  background-color: var(--cor-bc);
+  border-radius: 3.2rem;
+  position: relative;
+  margin-top: 10rem;
+}
+
+main .populares .container .wrapper-populares .prato img {
+  width: 29.1rem;
+  height: 29.1rem;
+  position: absolute;
+  top: -9rem;
+}
+
+main .populares .container .wrapper-populares .prato .descricao-prato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 25.1rem;
+}
+
+main .populares .container .wrapper-populares .prato .descricao-prato p {
+  width: 24.9rem;
+  font-size: 1.6rem;
+  padding: 1.6rem 0 3.2rem 0;
+}
+
+main .populares .container .wrapper-populares .prato .descricao-prato span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 3.2rem;
+}
+
+main .coments .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main .coments .container .wrapper-coments {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: 4.8rem 0 10rem 0;
+}
+
+main .coments .container .wrapper-coments .card-coments {
+  width: 60.4rem;
+  height: 39rem;
+  background-color: var(--cor-bc);
+  border-radius: 1.6rem;
+  padding: 5rem;
+}
+
+main .coments .container .wrapper-coments .card-coments img {
+  width: 12rem;
+  height: 12rem;
+  padding-bottom: 2.4rem;
+}
+
+main .coments .container .wrapper-coments .card-coments p {
+  font-size: clamp(1.4rem, 2vw, 2.4rem);
+  width: 50rem;
+  padding-top: 2.4rem;
+}
+
+main .coments .container .wrapper-coments .card-coments .stars {
+  display: flex;
+  width: clamp(1rem, 3vw, 3rem);
+  gap: 1rem;
+}
+
+main .localizacao .container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10rem;
+}
+
+main .localizacao .container img {
+  width: 122.8rem;
+  height: 50rem;
+  margin-top: 4.8rem;
+}
+
+main .localizacao .container form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5.6rem;
+}
+
+main .localizacao .container form input {
+  width: 50%;
+  height: 7rem;
+  border-radius: 1rem 0 0 1rem;
+  border: 0.1rem solid var(--cor-titulo);
+}
+
+main .localizacao .container form input::placeholder {
+  padding-left: 2rem;
+}
+
+main .localizacao .container form label {
+  background-color: var(--cor-nome);
+  width: 25%;
+  height: 7rem;
+  border-radius: 0 1rem 1rem 0;
+  color: var(--cor-botao);
+  font-size: clamp(1rem, 2vw, 2.4rem);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+footer .container .title-footer {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 3.2rem;
+  padding-bottom: 2.4rem;
+}
+
+footer .container ul li {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  color: --cor-texto;
+  padding-bottom: 0.8rem;
+  cursor: pointer;
+}
+
+footer .container ul li:hover {
+  color: var(--cor-nome);
 }
